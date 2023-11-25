@@ -1,0 +1,57 @@
+@media (max-width: 1399px) {
+  .Sidebar {
+    width: 115px;
+  }
+
+  .Sidebar.SidebarExtend {
+    width: 200px;
+  }
+  .Sidebar .SidebarMenu ul li a {
+    font-size: 12px;
+  }
+  .top-nav-bar {
+    padding: 0 20px 0 115px;
+  }
+  .main-content-wrapper {
+    padding-left: 115px;
+  }
+  td h3.order-no {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .Sidebar .SidebarMenu i {
+    font-size: 22px;
+  }
+  .table-wrapper table td,
+  td .customer-number,
+  td .product-price,
+  td p.date-and-time,
+  td .customer-address,
+  td .customer-name,
+  td .product-name,
+  td .product-quantity,
+  td .discount-pp span,
+  td .total-price,
+  td .status-select select,
+  td .notes-box textarea {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1023px) {
+  .Sidebar {
+    left: -115px;
+  }
+
+  .Sidebar.SidebarExtend {
+    left: 0;
+  }
+  .top-nav-bar {
+    padding: 0 20px;
+  }
+  .main-content-wrapper {
+    padding-left: 0px;
+  }
+  .nav-wrapper {
+    padding: 16px 0px;
+  }
+}

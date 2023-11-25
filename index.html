@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funnel Liner</title>
+    <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="asset/css/style.css" type="text/css">
+    <link rel="stylesheet" href="asset/css/responsive.css" type="text/css">
+</head>
+
+<body>
+    <div id="__root">
+        <div class="Sidebar">
+            <div class="ShopLogo">
+                <a class="" href="#"><i class="fa-regular fa-circle-user"></i></a>
+            </div>
+            <div class="SidebarMenu">
+                <ul>
+                    <li class="menu-item">
+                        <a class="active" href="#">
+                            <i class="fa-solid fa-border-all"></i>
+                            <span> Dashboard </span> 
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="" href="#">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span> Order </span> 
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="" href="#">
+                            <i class="fa-solid fa-inbox"></i>
+                            <span> Products </span> 
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="" href="#">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                            <span> Templates </span> 
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="" href="#">
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                            <span> My Page </span> 
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="" href="#">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <span> Bulk SMS </span> 
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="" href="#">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span> Customers </span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-nav-bar">
+            <div class="nav-wrapper">
+                <div class="left-side-page-logo">
+                    <div class="sliderBtn pointer">
+                        <img src="asset/images/dashboard.png" alt="">
+                    </div>
+                    <h4>Dashboard</h4>
+                </div>
+                <div class="right-side-menu">
+                    <div class="dashboard-action-button-wrapper">
+                        <span class="notificationBtn pointer"><i class="fa-regular fa-bell"></i><h6>0</h6></span>
+                        <div class="notificationCard">
+                            <div class="content">
+                                <div class="notification_title">
+                                    <h4> Notifications </h4>
+                                    <p>You have 0 unread messages</p>
+                                </div>
+                                <h5>New</h5>
+                                <ul class="notification-list"></ul>
+                                <a href="#" class="btn btn_100">See all notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-action-button-wrapper">
+                        <a href="#">
+                            <span><i class="fa-solid fa-headset"></i></span>
+                        </a>
+                    </div>
+                    <div class="dashboard-action-button-wrapper">
+                        <span class="UserProfile pointer"><i class="fa-regular fa-circle-user"></i></span>
+                        <div class="dashbord_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-house"></i>  Dashboard Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i></i>  Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i></i>  Change Password
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i></i>  Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="page-container">
+                <div class="top-button-group">
+                    <ul>
+                        <li><button class="tab_btn active">Pending <h6>45</h6></button></li>
+                        <li><button class="tab_btn">Confirmed </button></li>
+                        <li><button class="tab_btn">Shipped <h6>20</h6></button></li>
+                        <li><button class="tab_btn">Delivered </button></li>
+                        <li><button class="tab_btn">Cancelled <h6>76</h6></button></li>
+                        <li><button class="tab_btn">Returned </button></li>
+                        <li><button class="tab_btn">Follow Up </button></li>
+                    </ul>
+                </div>
+                <div class="filter-courier">
+                    <ul>
+                        <li><button class="filter_tab_btn active">Confirmed <h5><img width="100%" src="asset/images/Pathao-Logo.jpg" alt=""></h5> → <h6>45</h6> </button></li>
+                        <li><button class="filter_tab_btn">Confirmed <h5><img width="100%" src="asset/images/Pathao-Logo.jpg" alt=""></h5> → <h6>45</h6> </button></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="ckBox-th"><label class="checkbox-container"><input type="checkbox"><span class="checkmark"></span></label></th>
+                                    <th class="SL-th">SL</th>
+                                    <th class="orderNo-th">Order No &<br> Date</th>
+                                    <th class="custonerInfo-th">Customer Info</th>
+                                    <th class="productInfo-th">Product Info</th>
+                                    <th class="discount-th">Discount</th>
+                                    <th class="totalPrice-th">Total Price</th>
+                                    <th class="advance-th">Advanced</th>
+                                    <th class="due-th">Due</th>
+                                    <th class="status-th">Status</th>
+                                    <th class="notes-th">Notes</th>
+                                    <th class="ation-th">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border-radius: 5px 0px 0px 5px;">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        <div><h3 class="order-no">#3210</h3></div>
+                                        <div><p class="date-and-time">2 hours ago <br> Jun 27, 2023</p></div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name"><span class="icon-wrapper"><i class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
+                                        <div class="customer-number"><span class="icon-wrapper"><i class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
+                                        <div class="customer-address"><span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12, Dhaka</div>
+                                    </td>
+                                    <td>
+                                        <div class="product-name"> Green tea</div>
+                                        <div class="product-price"> ৳ <span>990</span></div>
+                                        <div class="product-quantity"> Quantity: <b>45</b></div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-pp">
+                                            <span>৳ 23 </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            ৳ <span>2,990.00</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-pp">
+                                            <span>৳ 345 </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            ৳ <span>2,990.00</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="status-select">
+                                            <select name="" id="">
+                                                <option value="Pending">Pending</option>
+                                                <option value="Pending">Delevered</option>
+                                                <option value="Pending">Cancel</option>
+                                                <option value="Pending">Refund</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="notes-box">
+                                            <textarea rows="3" placeholder="Internal Notes..."></textarea>
+                                        </div>
+                                    </td>
+                                    <td style="border-radius: 0px 5px 5px 0px;">
+                                        <div class="actin-button-wrapper">
+                                            <span class="actionButton pointer" data-toggle-button="toggleButton1">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </span>
+
+                                            <div class="action_menu" data-toggle-nav="toggleButton1">
+                                                <ul>
+                                                    <li><a class="action-item" href="#"><i class="fa-regular fa-eye"></i>  View </a></li>
+                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-pencil"></i>  Edit </a></li>
+                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-trash-can"></i>  Delete </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-radius: 5px 0px 0px 5px;">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        <div><h3 class="order-no">#3210</h3></div>
+                                        <div><p class="date-and-time">2 hours ago <br> Jun 27, 2023</p></div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name"><span class="icon-wrapper"><i class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
+                                        <div class="customer-number"><span class="icon-wrapper"><i class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
+                                        <div class="customer-address"><span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12, Dhaka</div>
+                                    </td>
+                                    <td>
+                                        <div class="product-name"> Green tea</div>
+                                        <div class="product-price"> ৳ <span>990</span></div>
+                                        <div class="product-quantity"> Quantity: <b>45</b></div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-pp">
+                                            <span>৳ 23 </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            ৳ <span>2,990.00</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-pp">
+                                            <span>৳ 345 </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            ৳ <span>2,990.00</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="status-select">
+                                            <select name="" id="">
+                                                <option value="Pending">Pending</option>
+                                                <option value="Pending">Delevered</option>
+                                                <option value="Pending">Cancel</option>
+                                                <option value="Pending">Refund</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="notes-box">
+                                            <textarea rows="3" placeholder="Internal Notes..."></textarea>
+                                        </div>
+                                    </td>
+                                    <td style="border-radius: 0px 5px 5px 0px;">
+                                        <div class="actin-button-wrapper">
+                                            <span class="actionButton pointer" data-toggle-button="toggleButton2">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </span>
+
+                                            <div class="action_menu" data-toggle-nav="toggleButton2">
+                                                <ul>
+                                                    <li><a class="action-item" href="#"><i class="fa-regular fa-eye"></i>  View </a></li>
+                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-pencil"></i>  Edit </a></li>
+                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-trash-can"></i>  Delete </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-radius: 5px 0px 0px 5px;">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        <div><h3 class="order-no">#3210</h3></div>
+                                        <div><p class="date-and-time">2 hours ago <br> Jun 27, 2023</p></div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name"><span class="icon-wrapper"><i class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
+                                        <div class="customer-number"><span class="icon-wrapper"><i class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
+                                        <div class="customer-address"><span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12, Dhaka</div>
+                                    </td>
+                                    <td>
+                                        <div class="product-name"> Green tea</div>
+                                        <div class="product-price"> ৳ <span>990</span></div>
+                                        <div class="product-quantity"> Quantity: <b>45</b></div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-pp">
+                                            <span>৳ 23 </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            ৳ <span>2,990.00</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-pp">
+                                            <span>৳ 345 </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            ৳ <span>2,990.00</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="status-select">
+                                            <select name="" id="">
+                                                <option value="Pending">Pending</option>
+                                                <option value="Pending">Delevered</option>
+                                                <option value="Pending">Cancel</option>
+                                                <option value="Pending">Refund</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="notes-box">
+                                            <textarea rows="3" placeholder="Internal Notes..."></textarea>
+                                        </div>
+                                    </td>
+                                    <td style="border-radius: 0px 5px 5px 0px;">
+                                        <div class="actin-button-wrapper">
+                                            <span class="actionButton pointer" data-toggle-button="toggleButton3">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </span>
+
+                                            <div class="action_menu" data-toggle-nav="toggleButton3">
+                                                <ul>
+                                                    <li><a class="action-item" href="#"><i class="fa-regular fa-eye"></i>  View </a></li>
+                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-pencil"></i>  Edit </a></li>
+                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-trash-can"></i>  Delete </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="asset/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
