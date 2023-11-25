@@ -636,7 +636,7 @@ td .status-select select, td .notes-box textarea {
 td .notes-box textarea{
     border-radius: 10px;
     width: 100%;
-    max-width: 130px;
+    max-width: 190px;
 }
 td .status-select select:focus-visible, td .notes-box textarea {
     outline: none;
@@ -732,10 +732,10 @@ th.custonerInfo-th {
     width: 20%;
 }
 
-/* th.status-th {
-    width: 9%;
+th.notes-th {
+    width: 10%;
 }
 
-th.notes-th {
+/*th.notes-th {
     width: 10%;
 } */

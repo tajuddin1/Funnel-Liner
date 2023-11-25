@@ -104,4 +104,8 @@
   td .status-select select, td .notes-box textarea {
     padding: 3px;
   }
+
+  th.notes-th {
+    width: unset;
+  }
 }
