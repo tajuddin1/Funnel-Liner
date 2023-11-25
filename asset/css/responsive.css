@@ -1,4 +1,4 @@
-@media (max-width: 1399px) {
+@media screen and (max-width: 1400px) {
   .Sidebar {
     width: 115px;
   }
@@ -36,8 +36,17 @@
   td .notes-box textarea {
     font-size: 12px;
   }
+  .table-wrapper th {
+    font-size: 12px;
+    padding: 10px 4px;
+  }
+  
 }
-@media (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
+  a, button {
+    font-size: 12px;
+    line-height: 20px;
+  }
   .Sidebar {
     left: -115px;
   }
@@ -53,5 +62,46 @@
   }
   .nav-wrapper {
     padding: 16px 0px;
+  }
+
+  .checkbox-container {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 4px;
+  }
+  .checkmark {
+    height: 20px;
+    width: 20px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .notification_title p {
+    font-size: 12px;
+  }
+  .notification_title h4 {
+    font-size: 18px;
+  }
+  .notificationCard .content h5 {
+    font-size: 14px;
+  }
+  .notificationCard .content a.btn_100 {
+    font-size: 14px;
+  }
+  .checkbox-container {
+    padding-left: 17px;
+    margin-bottom: 15px;
+    margin-left: 2px;
+  }
+  .checkmark {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #632cd2;
+  }
+  td .discount-pp span {
+    padding: 4px 8px;
+  }
+  td .status-select select, td .notes-box textarea {
+    padding: 3px;
   }
 }

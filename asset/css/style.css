@@ -469,7 +469,7 @@ button.filter_tab_btn h6 {
     position: relative;
     padding-left: 35px;
     margin-bottom: 25px;
-    margin-left: 25px;
+    margin-left: 15px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -552,6 +552,7 @@ td p.date-and-time {
     font-size: 15px;
     line-height: 20px;
     color: #74788d;
+    white-space: nowrap;
 }
 
 span.icon-wrapper {
@@ -608,6 +609,7 @@ td .discount-pp span {
     font-size: 14px;
     color: #74788d;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 /* td .discount-pp {
@@ -619,6 +621,8 @@ td .discount-pp span {
     font-weight: 500;
     color: #74788d;
     letter-spacing: 0.3px;
+    line-break: none;
+    white-space: nowrap;
 }
 
 td .status-select select, td .notes-box textarea {
@@ -632,7 +636,7 @@ td .status-select select, td .notes-box textarea {
 td .notes-box textarea{
     border-radius: 10px;
     width: 100%;
-    max-width: 190px;
+    max-width: 130px;
 }
 td .status-select select:focus-visible, td .notes-box textarea {
     outline: none;
@@ -643,8 +647,8 @@ td .status-select select:focus-visible, td .notes-box textarea {
     background: #fff;
     border-radius: 5px;
     box-shadow: rgb(226 222 232 / 63%) 0px -4px 1px -9px, rgb(206 202 214 / 43%) 0px 8px 15px 1px, rgb(208 203 214 / 68%) 0px 3px 14px 2px;
-    left: -50px;
     top: 30px;
+    right: 18px;
     display: none;
     z-index: 9;
 }
@@ -697,39 +701,41 @@ span.actionButton.pointer {
     color: #74788d;
     margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-th.ckBox-th, th.ation-th {
-    width: 5%;
+.product-quantity {
+    white-space: nowrap;
 }
 
-th.SL-th {
+
+
+
+
+
+
+
+
+
+
+
+th.ckBox-th {
     width: 3%;
 }
 
-th.orderNo-th, th.productInfo-th,th.discount-th,th.totalPrice-th,th.advance-th,th.due-th {
-    width: 8%;
+th.SL-th {
+    width: 2%;
 }
+
+/* th.orderNo-th, th.productInfo-th,th.discount-th,th.totalPrice-th,th.advance-th,th.due-th {
+    width: 8%;
+} */
 
 th.custonerInfo-th {
     width: 20%;
 }
 
-th.status-th {
+/* th.status-th {
     width: 9%;
 }
 
 th.notes-th {
     width: 10%;
-}
+} */
