@@ -586,7 +586,7 @@ button.filter_tab_btn h6 {
     /* position: relative; */
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 10;
 }
 
 .table-wrapper th::before {
@@ -630,7 +630,16 @@ button.filter_tab_btn h6 {
     overflow-y: scroll;
     max-height: calc(100vh - 300px);
 }
-
+.table-wrapper::-webkit-scrollbar-track {
+    margin-top: 63px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #fff; 
+    box-shadow: -5px -0px 0px #632cd2;
+}
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #fff; 
+}
 .table-wrapper table {
     width: 100%;
     border-collapse: separate;
