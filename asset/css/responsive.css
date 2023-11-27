@@ -209,7 +209,7 @@
   }
 
   .table-wrapper {
-    padding: 20px 0;
+    margin: 20px 0;
   }
 
   .sliderBtn {
@@ -240,5 +240,13 @@
   .Sidebar {
     top: 55px;
     height: calc(100vh - 55px);
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group .form-group {
+    width: 100%;
   }
 }

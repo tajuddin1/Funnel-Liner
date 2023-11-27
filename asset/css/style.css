@@ -588,7 +588,6 @@ button.filter_tab_btn h6 {
     top: 0;
     z-index: 10;
 }
-
 .table-wrapper th::before {
     position: absolute;
     content: "\2191";
@@ -632,13 +631,16 @@ button.filter_tab_btn h6 {
 }
 .table-wrapper::-webkit-scrollbar-track {
     margin-top: 63px;
+    margin-bottom: 10px;
+    width: 0px;
+    background-color: transparent;
 }
 .table-wrapper::-webkit-scrollbar-thumb {
-    background: #fff; 
-    box-shadow: -5px -0px 0px #632cd2;
+    background: transparent !important; 
+    box-shadow: -3px -0px 0px #632cd2bd;
 }
 .table-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #fff; 
+    background: transparent !important; 
 }
 .table-wrapper table {
     width: 100%;
@@ -1155,8 +1157,20 @@ input.form-control:focus-visible {
     border: 1px solid #e1cdfc;
     box-shadow: 0px 0px 1px 2px #e1cdfc;
 }
-.form-group .form-control {
+.form-group {
+    position: relative;
     margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.input-group .form-group {
+    width: 50%;
 }
 
 .form-group label {
@@ -1165,10 +1179,6 @@ input.form-control:focus-visible {
     margin-bottom: 5px;
     display: block;
     color: #74788d;
-}
-
-.form-group {
-    position: relative;
 }
 
 input.form-control.error {
