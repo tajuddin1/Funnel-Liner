@@ -116,3 +116,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButtons = document.querySelectorAll('.select_type_btn');
+  const dropdownItems = document.querySelectorAll('.selectitemcode');
+  // const customSelect = document.querySelectorAll('.customSelect');
+
+  dropdownItems.forEach((item) => {
+    item.addEventListener('click', function () {
+      const text = this.textContent.trim();
+      const button = this.closest('.customSelect').querySelector('.select_type_btn');
+      button.textContent = text;
+    });
+  });
+
+  dropdownButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      const menu = this.nextElementSibling;
+      const dropdownButtons = this.closest('.select_type_btn');
+      menu.classList.toggle('show');
+      dropdownButtons.classList.toggle('open');
+    });
+  });
+
+  window.addEventListener('click', function (e) {
+    if (!e.target.matches('.select_type_btn')) {
+      const menus = document.querySelectorAll('.dropdown-menu');
+      
+      menus.forEach((menu) => {
+        if (menu.classList.contains('show')) {
+          menu.classList.remove('show');
+        }
+      });
+
+      dropdownButtons.forEach((select) => {
+        select.classList.remove('open');
+      });
+    }
+  });
+});

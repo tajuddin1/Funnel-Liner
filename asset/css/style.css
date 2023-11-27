@@ -958,27 +958,27 @@ th.SL-th {
 }
 
 th.orderNo-th {
-    min-width: 105px;
+    min-width: 110px;
 }
 
 th.productInfo-th {
-    min-width: 115px;
+    min-width: 120px;
 }
 
 th.discount-th {
-    min-width: 90px;
-}
-
-th.totalPrice-th {
     min-width: 100px;
 }
 
+th.totalPrice-th {
+    min-width: 110px;
+}
+
 th.advance-th {
-    min-width: 96px;
+    min-width: 105px;
 }
 
 th.ation-th {
-    min-width: 70px;
+    min-width: 80px;
 }
 
 .wallet p {
@@ -1069,4 +1069,83 @@ th.ation-th {
 .userImg h2 {
     font-size: 20px;
     color: #ffffff;
+}
+
+
+
+button.select_type_btn {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    font-size: 16px;
+    background: #efefef;
+    border-radius: 8px;
+    border: 1px solid #e1cdfc;
+    position: relative;
+    cursor: pointer;
+}
+button.select_type_btn.open {
+    border-radius: 8px 8px 0px 0px;
+}
+button.select_type_btn::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 15px;
+    right: 15px;
+    border: 2px solid #632cd2;
+    transform: rotate(-45deg);
+    border-top: none;
+    border-right: none;
+    transition: .2s all;
+}
+button.select_type_btn.open::after {
+    transform: rotate(135deg);
+    top: 18px;
+}
+.dropdown-menu {
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px #eee8f7;
+    border:0;
+    border-radius: 0px 0px 8px 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: 0.2s all;
+    display: none;
+    border: 1px solid #e0ccfc;
+    border-top: 0;
+}
+
+.dropdown-menu.show{
+    display: block;
+}
+
+li.selectitemcode {
+    padding: 5px 16px;
+    cursor: pointer;
+    transition: .2s all;
+    border-bottom: 1px solid #d8c3f540;
+}
+li.selectitemcode:last-child{
+    border-bottom: unset;
+}
+li.selectitemcode:hover {
+    background: #e1cdfc;
+}
+
+input.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #e1cdfc;
+    background: #efefef;
+}
+
+input.form-control:focus-visible {
+    outline: none;
+    border: 1px solid #e1cdfc;
+    box-shadow: 0px 0px 1px 2px #e1cdfc;
 }
