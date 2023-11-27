@@ -1104,7 +1104,12 @@ button.select_type_btn.open::after {
     transform: rotate(135deg);
     top: 18px;
 }
+.customSelect{
+    position: relative;
+    max-height: 40px;
+}
 .dropdown-menu {
+    position: relative;
     width: 100%;
     box-shadow: 0px 5px 10px 0px #eee8f7;
     border:0;
@@ -1113,6 +1118,7 @@ button.select_type_btn.open::after {
     background: #fff;
     transition: 0.2s all;
     display: none;
+    z-index: 10;
     border: 1px solid #e0ccfc;
     border-top: 0;
 }
@@ -1148,4 +1154,42 @@ input.form-control:focus-visible {
     outline: none;
     border: 1px solid #e1cdfc;
     box-shadow: 0px 0px 1px 2px #e1cdfc;
+}
+.form-group .form-control {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: block;
+    color: #74788d;
+}
+
+.form-group {
+    position: relative;
+}
+
+input.form-control.error {
+    border: 1px solid red;
+
+}
+.form-valid-result p {
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.form-valid-result {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+}
+
+p.success {
+    color: green;
+}
+
+p.error {
+    color: red;
 }

@@ -360,21 +360,37 @@
                 </div>
 
                 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                    <div style="width: 40%;">
-                        <div class="customSelect">
-                            <button type="button" class="select_type_btn" data-bs-toggle="dropdown" aria-expanded="false">Select Item</button>
-                            <ul class="dropdown-menu">
-                                <li class="selectitemcode"> Item 1</li>
-                                <li class="selectitemcode"> Item 2</li>
-                                <li class="selectitemcode"> Item 3</li>
-                                <li class="selectitemcode"> Item 4</li>
-                            </ul>
+                    <div style="width: 48%;">
+                        <div class="form-group">
+                            <label for="">Select Option</label>
+                            <div class="customSelect form-control">
+                                <button type="button" class="select_type_btn" data-bs-toggle="dropdown" aria-expanded="false">Select Item</button>
+                                <ul class="dropdown-menu">
+                                    <li class="selectitemcode"> Item 1</li>
+                                    <li class="selectitemcode"> Item 2</li>
+                                    <li class="selectitemcode"> Item 3</li>
+                                    <li class="selectitemcode"> Item 4</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div style="width: 40%;">
-                        <div class="textInput">
+                        <div class="form-group">
+                            <label for="">Name</label>
                             <input class="form-control" type="text" name="" id="" placeholder="Type anything...">
                         </div>
+                    </div>
+                    <div style="width: 48%;">
+                        <form class="form" action="">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input class="form-control" type="text" name="" id="" placeholder="Type anything...">
+                                <div class="form-valid-result"><p class="success">Great your information is match.</p></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input class="form-control error" type="text" name="" id="" placeholder="Type anything...">
+                                <div class="form-valid-result"><p class="error">This fiels is required</p></div>
+                            </div>
+                        </form>
                     </div>
                     
                 </div>
@@ -388,9 +404,6 @@
 
 
     <script src="asset/js/custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
