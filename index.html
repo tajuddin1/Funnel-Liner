@@ -11,53 +11,50 @@
 </head>
 
 <body>
-    <div id="__root">
+    <div id="__root" class="root">
         <div class="Sidebar">
-            <div class="ShopLogo">
-                <a class="" href="#"><i class="fa-regular fa-circle-user"></i></a>
-            </div>
             <div class="SidebarMenu">
                 <ul>
                     <li class="menu-item">
                         <a class="active" href="#">
                             <i class="fa-solid fa-border-all"></i>
-                            <span> Dashboard </span> 
+                            <span> Dashboard </span>
                         </a>
                     </li>
                     <li class="menu-item">
                         <a class="" href="#">
                             <i class="fa-regular fa-file-lines"></i>
-                            <span> Order </span> 
+                            <span> Order </span>
                         </a>
                     </li>
                     <li class="menu-item">
                         <a class="" href="#">
                             <i class="fa-solid fa-inbox"></i>
-                            <span> Products </span> 
+                            <span> Products </span>
                         </a>
                     </li>
                     <li class="menu-item">
                         <a class="" href="#">
                             <i class="fa-solid fa-boxes-stacked"></i>
-                            <span> Templates </span> 
+                            <span> Templates </span>
                         </a>
                     </li>
                     <li class="menu-item">
                         <a class="" href="#">
                             <i class="fa-solid fa-money-bill-trend-up"></i>
-                            <span> My Page </span> 
+                            <span> My Page </span>
                         </a>
                     </li>
                     <li class="menu-item">
                         <a class="" href="#">
                             <i class="fa-regular fa-comment-dots"></i>
-                            <span> Bulk SMS </span> 
+                            <span> Bulk SMS </span>
                         </a>
                     </li>
                     <li class="menu-item">
                         <a class="" href="#">
                             <i class="fa-solid fa-people-group"></i>
-                            <span> Customers </span> 
+                            <span> Customers </span>
                         </a>
                     </li>
                 </ul>
@@ -73,7 +70,9 @@
                 </div>
                 <div class="right-side-menu">
                     <div class="dashboard-action-button-wrapper">
-                        <span class="notificationBtn pointer"><i class="fa-regular fa-bell"></i><h6>0</h6></span>
+                        <span class="notificationBtn pointer"><i class="fa-regular fa-bell"></i>
+                            <h6>0</h6>
+                        </span>
                         <div class="notificationCard">
                             <div class="content">
                                 <div class="notification_title">
@@ -94,28 +93,46 @@
                     <div class="dashboard-action-button-wrapper">
                         <span class="UserProfile pointer"><i class="fa-regular fa-circle-user"></i></span>
                         <div class="dashbord_nav">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-house"></i>  Dashboard Settings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i></i>  Profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i></i>  Change Password
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i></i>  Logout
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="user-profile">
+                                <div class="user-details">
+                                    <div class="userImg">
+                                        <h2>TU</h2>
+                                        <!-- <img width="100%" src="" alt=""> -->
+                                    </div>
+                                    <div class="userData">
+                                        <h2>Taz Uddin</h2>
+                                        <span>tazuddin@example.com</span>
+                                    </div>
+                                </div>
+                                <div class="wallet">
+                                    <p>Wallet Accout</p>
+                                    <h3>12.658655 <span>BTC</span></h3>
+                                    <span>Loked at: 0.35968 BTC</span>
+                                    <a href="#">Withdraw Funds <i class="fa-solid fa-wallet"></i></a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-house"></i> View Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-gear"></i> Account Setting
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-chart-line"></i> Log Activity
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -137,8 +154,10 @@
                 </div>
                 <div class="filter-courier">
                     <ul>
-                        <li><button class="filter_tab_btn active">Confirmed <h5><img width="100%" src="asset/images/Pathao-Logo.jpg" alt=""></h5> → <h6>45</h6> </button></li>
-                        <li><button class="filter_tab_btn">Confirmed <h5><img width="100%" src="asset/images/Pathao-Logo.jpg" alt=""></h5> → <h6>45</h6> </button></li>
+                        <li><button class="filter_tab_btn active">Confirmed <h5><img width="100%"
+                                        src="asset/images/Pathao-Logo.jpg" alt=""></h5> → <h6>45</h6> </button></li>
+                        <li><button class="filter_tab_btn">Confirmed <h5><img width="100%"
+                                        src="asset/images/Pathao-Logo.jpg" alt=""></h5> → <h6>45</h6> </button></li>
                     </ul>
                 </div>
 
@@ -147,7 +166,8 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="ckBox-th"><label class="checkbox-container"><input type="checkbox"><span class="checkmark"></span></label></th>
+                                    <th class="ckBox-th"><label class="checkbox-container"><input type="checkbox"><span
+                                                class="checkmark minus"></span></label></th>
                                     <th class="SL-th">SL</th>
                                     <th class="orderNo-th">Order No &<br> Date</th>
                                     <th class="custonerInfo-th">Customer Info</th>
@@ -163,7 +183,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="border-radius: 5px 0px 0px 5px;">
+                                    <td>
                                         <label class="checkbox-container">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
@@ -173,13 +193,21 @@
                                         1
                                     </td>
                                     <td>
-                                        <div><h3 class="order-no">#3210</h3></div>
-                                        <div><p class="date-and-time">2 hours ago <br> Jun 27, 2023</p></div>
+                                        <div>
+                                            <h3 class="order-no">#3210</h3>
+                                        </div>
+                                        <div>
+                                            <p class="date-and-time">2 hours ago <br> Jun 27, 2023</p>
+                                        </div>
                                     </td>
                                     <td>
-                                        <div class="customer-name"><span class="icon-wrapper"><i class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
-                                        <div class="customer-number"><span class="icon-wrapper"><i class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
-                                        <div class="customer-address"><span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12, Dhaka</div>
+                                        <div class="customer-name"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
+                                        <div class="customer-number"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
+                                        <div class="customer-address"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12,
+                                            Dhaka</div>
                                     </td>
                                     <td>
                                         <div class="product-name"> Green tea</div>
@@ -221,7 +249,7 @@
                                             <textarea rows="3" placeholder="Internal Notes..."></textarea>
                                         </div>
                                     </td>
-                                    <td style="border-radius: 0px 5px 5px 0px;">
+                                    <td>
                                         <div class="actin-button-wrapper">
                                             <span class="actionButton pointer" data-toggle-button="toggleButton1">
                                                 <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -229,16 +257,19 @@
 
                                             <div class="action_menu" data-toggle-nav="toggleButton1">
                                                 <ul>
-                                                    <li><a class="action-item" href="#"><i class="fa-regular fa-eye"></i>  View </a></li>
-                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-pencil"></i>  Edit </a></li>
-                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-trash-can"></i>  Delete </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-regular fa-eye"></i> View </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-solid fa-pencil"></i> Edit </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-solid fa-trash-can"></i> Delete </a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="border-radius: 5px 0px 0px 5px;">
+                                    <td>
                                         <label class="checkbox-container">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
@@ -248,13 +279,21 @@
                                         2
                                     </td>
                                     <td>
-                                        <div><h3 class="order-no">#3210</h3></div>
-                                        <div><p class="date-and-time">2 hours ago <br> Jun 27, 2023</p></div>
+                                        <div>
+                                            <h3 class="order-no">#3210</h3>
+                                        </div>
+                                        <div>
+                                            <p class="date-and-time">2 hours ago <br> Jun 27, 2023</p>
+                                        </div>
                                     </td>
                                     <td>
-                                        <div class="customer-name"><span class="icon-wrapper"><i class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
-                                        <div class="customer-number"><span class="icon-wrapper"><i class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
-                                        <div class="customer-address"><span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12, Dhaka</div>
+                                        <div class="customer-name"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
+                                        <div class="customer-number"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
+                                        <div class="customer-address"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12,
+                                            Dhaka</div>
                                     </td>
                                     <td>
                                         <div class="product-name"> Green tea</div>
@@ -296,7 +335,7 @@
                                             <textarea rows="3" placeholder="Internal Notes..."></textarea>
                                         </div>
                                     </td>
-                                    <td style="border-radius: 0px 5px 5px 0px;">
+                                    <td>
                                         <div class="actin-button-wrapper">
                                             <span class="actionButton pointer" data-toggle-button="toggleButton2">
                                                 <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -304,16 +343,19 @@
 
                                             <div class="action_menu" data-toggle-nav="toggleButton2">
                                                 <ul>
-                                                    <li><a class="action-item" href="#"><i class="fa-regular fa-eye"></i>  View </a></li>
-                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-pencil"></i>  Edit </a></li>
-                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-trash-can"></i>  Delete </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-regular fa-eye"></i> View </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-solid fa-pencil"></i> Edit </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-solid fa-trash-can"></i> Delete </a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="border-radius: 5px 0px 0px 5px;">
+                                    <td>
                                         <label class="checkbox-container">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
@@ -323,13 +365,21 @@
                                         3
                                     </td>
                                     <td>
-                                        <div><h3 class="order-no">#3210</h3></div>
-                                        <div><p class="date-and-time">2 hours ago <br> Jun 27, 2023</p></div>
+                                        <div>
+                                            <h3 class="order-no">#3210</h3>
+                                        </div>
+                                        <div>
+                                            <p class="date-and-time">2 hours ago <br> Jun 27, 2023</p>
+                                        </div>
                                     </td>
                                     <td>
-                                        <div class="customer-name"><span class="icon-wrapper"><i class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
-                                        <div class="customer-number"><span class="icon-wrapper"><i class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
-                                        <div class="customer-address"><span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12, Dhaka</div>
+                                        <div class="customer-name"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-user"></i></span> Md Taz Uddin...</div>
+                                        <div class="customer-number"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-phone-volume"></i></span> 01234567890</div>
+                                        <div class="customer-address"><span class="icon-wrapper"><i
+                                                    class="fa-solid fa-location-dot"></i></span> Dhanmondi 32, Road 12,
+                                            Dhaka</div>
                                     </td>
                                     <td>
                                         <div class="product-name"> Green tea</div>
@@ -371,7 +421,7 @@
                                             <textarea rows="3" placeholder="Internal Notes..."></textarea>
                                         </div>
                                     </td>
-                                    <td style="border-radius: 0px 5px 5px 0px;">
+                                    <td>
                                         <div class="actin-button-wrapper">
                                             <span class="actionButton pointer" data-toggle-button="toggleButton3">
                                                 <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -379,9 +429,12 @@
 
                                             <div class="action_menu" data-toggle-nav="toggleButton3">
                                                 <ul>
-                                                    <li><a class="action-item" href="#"><i class="fa-regular fa-eye"></i>  View </a></li>
-                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-pencil"></i>  Edit </a></li>
-                                                    <li><a class="action-item" href="#"><i class="fa-solid fa-trash-can"></i>  Delete </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-regular fa-eye"></i> View </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-solid fa-pencil"></i> Edit </a></li>
+                                                    <li><a class="action-item" href="#"><i
+                                                                class="fa-solid fa-trash-can"></i> Delete </a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -401,7 +454,9 @@
 
 
     <script src="asset/js/custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

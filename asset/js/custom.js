@@ -1,8 +1,10 @@
 const sidebar = document.querySelector(".Sidebar");
+const mainContent = document.querySelector(".root");
 const sliderBtn = document.querySelector(".sliderBtn");
 
 function toggleSidebar() {
   sidebar.classList.toggle("SidebarExtend");
+  mainContent.classList.toggle("shrink");
 }
 
 sliderBtn.addEventListener("click", function () {
@@ -15,6 +17,7 @@ document.addEventListener("click", function (event) {
 
   if (!isClickedInsideSidebar && !isClickedOnSliderBtn) {
     sidebar.classList.remove("SidebarExtend");
+    mainContent.classList.remove("shrink");
   }
 });
 
