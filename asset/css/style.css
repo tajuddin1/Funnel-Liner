@@ -637,7 +637,8 @@ button.filter_tab_btn h6 {
 }
 .table-wrapper::-webkit-scrollbar-thumb {
     background: transparent !important; 
-    box-shadow: -3px -0px 0px #632cd2bd;
+    -webkit-box-shadow: -3px -0px 0px #632cd2bd; 
+            box-shadow: -3px -0px 0px #632cd2bd;
 }
 .table-wrapper::-webkit-scrollbar-thumb:hover {
     background: transparent !important; 
@@ -1097,13 +1098,19 @@ button.select_type_btn::after{
     top: 15px;
     right: 15px;
     border: 2px solid #632cd2;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     border-top: none;
     border-right: none;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
     transition: .2s all;
 }
 button.select_type_btn.open::after {
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
     top: 18px;
 }
 .customSelect{
@@ -1113,11 +1120,14 @@ button.select_type_btn.open::after {
 .dropdown-menu {
     position: relative;
     width: 100%;
-    box-shadow: 0px 5px 10px 0px #eee8f7;
+    -webkit-box-shadow: 0px 5px 10px 0px #eee8f7;
+            box-shadow: 0px 5px 10px 0px #eee8f7;
     border:0;
     border-radius: 0px 0px 8px 8px;
     overflow: hidden;
     background: #fff;
+    -webkit-transition: 0.2s all;
+    -o-transition: 0.2s all;
     transition: 0.2s all;
     display: none;
     z-index: 10;
@@ -1132,6 +1142,8 @@ button.select_type_btn.open::after {
 li.selectitemcode {
     padding: 5px 16px;
     cursor: pointer;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
     transition: .2s all;
     border-bottom: 1px solid #d8c3f540;
 }
@@ -1155,7 +1167,8 @@ input.form-control {
 input.form-control:focus-visible {
     outline: none;
     border: 1px solid #e1cdfc;
-    box-shadow: 0px 0px 1px 2px #e1cdfc;
+    -webkit-box-shadow: 0px 0px 1px 2px #e1cdfc;
+            box-shadow: 0px 0px 1px 2px #e1cdfc;
 }
 .form-group {
     position: relative;
@@ -1163,10 +1176,19 @@ input.form-control:focus-visible {
 }
 
 .input-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
 }
 
 .input-group .form-group {
@@ -1185,6 +1207,12 @@ input.form-control.error {
     border: 1px solid red;
 
 }
+input.form-control.error:focus-visible {
+    outline: none;
+    border: 1px solid red;
+    -webkit-box-shadow: 0px 0px 1px 2px rgba(255, 0, 0, 0.314);
+            box-shadow: 0px 0px 1px 2px rgba(255, 0, 0, 0.314);
+}
 .form-valid-result p {
     font-size: 13px;
     padding-left: 2px;
@@ -1202,4 +1230,50 @@ p.success {
 
 p.error {
     color: red;
+}
+
+.from-group-with-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}
+
+.from-group-with-icon input.form-control {
+    width: calc(100% - 36px);
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid green;
+}
+
+.barcode-icon {
+    width: 36px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 0px 3px 3px 0px;
+    background-color: #cbcbcb91;
+    border: 1px solid #333;
+    border-left: 0;
+}
+
+.barcode-icon a {
+    padding: 7px 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.from-group-with-icon input.form-control:focus-visible {
+    outline: none;
+    border: 1px solid green;
+    -webkit-box-shadow: 0px 0px 1px 2px rgba(3, 196, 3, 0.234);
+            box-shadow: 0px 0px 1px 2px rgba(3, 196, 3, 0.234);
 }
